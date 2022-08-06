@@ -1,13 +1,14 @@
 public class contaCorrente extends Conta{
 
 
-    public contaCorrente(cliente cliente) {
+    public contaCorrente(Cliente cliente) {
         super(cliente);
     }
 
     @Override
     public void imprimirExtrato() {
-        System.out.println("*** Extrato conta corrente ***");
-        imprimirDadosComuns();
+
+        System.out.println("** Extrato conta corrente **");
+        super.imprimirDadosComuns();
     }
 }

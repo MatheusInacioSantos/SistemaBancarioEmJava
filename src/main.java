@@ -2,16 +2,16 @@ public class main {
 
     public static void main(String[] args) {
 
-        cliente nomeCliente = new cliente();
+        Cliente nomeCliente = new Cliente();
 
-        nomeCliente.setNome("Matheus Inácio");
+        nomeCliente.setNome("Matheus");
 
         Conta cc = new contaCorrente(nomeCliente);
         cc.depositar(100);
-        Conta poup = new contaCorrente(nomeCliente);
+        Conta poup = new contaPoupanca(nomeCliente);
 
         cc.transferir(100, poup);
-        cc.imprimirDadosComuns();
-        poup.imprimirDadosComuns();
+        cc.imprimirExtrato();
+        poup.imprimirExtrato();
     }
 }
